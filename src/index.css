@@ -1,13 +1,117 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  background: linear-gradient(
+    180deg,
+    rgb(54, 54, 54) 50%,
+    rgb(51, 51, 51),
+    rgb(32, 32, 32)
+  );
+}
+.supreme {
+  width: 672px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 0 10px;
+}
+.header h1 {
+  font-size: 28px;
+  color: white;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.list_wrap {
+  width: 207px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list_wrap a {
+  width: fit-content;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.list_wrap a:hover {
+  border-bottom: 4px solid gray;
+  color: white;
+}
+.active {
+  border-bottom: 4px solid white;
+}
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+}
+.footer_text {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer_text a {
+  color: white;
+  text-decoration: none;
+}
+.pages_wrap {
+  margin-top: 200px;
+  padding: 0 80px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+}
+.home_button {
+  width: 140px;
+  min-height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.features_button {
+  border: none;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 18px;
+  cursor: pointer;
+}
+.features_button:focus,
+.home_button:focus {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.511);
+}
+.map_wrap {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+.map_wrap h1 {
+  padding-bottom: 20px;
+}
+.yandex_map {
+  width: 100%;
 }
